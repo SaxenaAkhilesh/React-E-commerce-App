@@ -1,46 +1,190 @@
-# Getting Started with Create React App
+# React E-commerce Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##  Project Overview
 
-## Available Scripts
+This is a modern E-commerce Frontend Application built using React + TypeScript.
+The application allows users to browse products, search items, view product details, and manage a shopping cart with a smooth user experience.
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+##  Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+*  *Home Page*
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  * Displays product listing from API
+  * Responsive grid layout
+  * Clean UI with Tailwind CSS
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+*  *Search Functionality*
 
-### `npm run eject`
+  * Search by *title, description, category, and price
+  * Debounced search for better performance
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+*  *Product Details Page*
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  * Dynamic routing using product ID
+  * Shows image, title, price, category, and description
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+*  *Cart Drawer (Sidebar)*
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+  * Opens from right side
+  * Add to cart functionality
+  * Increase / Decrease quantity
+  * Remove items
+  * Total price calculation
+  * Shows total items count
 
-## Learn More
+* *Persistence*
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  * Cart data stored in **localStorage**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+*  **UI/UX**
+
+  * Fully responsive design
+  * Smooth transitions and clean layout
+
+
+
+
+
+
+---
+
+##  Tech Stack
+
+* React
+* TypeScript
+* Context API (State Management)
+* Tailwind CSS
+* Axios (API calls)
+* React Router DOM
+
+
+
+
+
+
+---
+
+##  Project Setup Instructions
+
+### 1 Clone Repository
+
+cmd
+git clone https://github.com/your-username/your-repo-name.git
+
+
+### 2 Navigate to Project
+
+cmd
+cd your-repo-name
+
+
+### 3 Install Dependencies
+
+cmd
+npm install
+
+
+### 4 Run Project
+
+cmd
+npm start
+
+
+ The app will run on:
+
+
+http://localhost:3000
+
+
+
+
+
+---
+
+## ⚙️ Environment Setup
+
+Before running the project, create a `.env` file in the root directory.
+
+### 📄 Steps:
+
+1. Create a file named `.env` in the project root.
+
+2. Add the following variable:
+PRODUCT_API_BASE_URL=https://api.escuelajs.co/api/v1
+
+##  API Used
+
+* Fake Store API
+* Base URL: https://api.escuelajs.co/api/v1
+
+
+
+
+
+
+---
+
+##  Pages Overview
+
+###  Home Page
+
+* Product grid view
+* Search bar
+* Add to Cart button
+
+### Product Details Page
+
+* Product image
+* Title, price, category
+* Description
+* Add to Cart
+
+### Cart Drawer
+
+* Sidebar cart UI
+* Quantity management
+* Remove item
+* Total calculation
+
+
+
+
+---
+
+##  Notes
+
+* The initial Context API structure was set up with guidance from ChatGPT.
+* All business logic, implementation, and feature development were written and handled by me.
+* Sorting functionality is not implemented due to time constraints.
+
+
+
+
+
+
+
+
+
+
+---
+##  Future Improvements
+
+* Checkout flow
+* Payment integration
+* Product filters (category, price range)
+* Animations & transitions
+* Wishlist feature
+
+
+---
+
+##  Author
+
+Developed by Akhilesh Saxena
